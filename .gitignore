@@ -1,0 +1,22 @@
+# Compiled source
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Rust specific
+*/target/
+**/*.rs.bk
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
