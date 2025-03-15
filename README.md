@@ -61,6 +61,32 @@ cargo run --release
 - rayon (for parallel processing)
 - num-complex (complex number calculations)
 
+### Particle Life
+
+An artificial life simulation where particles interact with each other based on attraction/repulsion rules, creating emergent behavior and patterns.
+
+**Features:**
+- 5000 particles with 5 different types
+- GPU-accelerated rendering using WGPU
+- Particle interactions based on type-specific attraction/repulsion rules
+- Smooth, real-time simulation with parallel processing
+- Wrapping boundaries (particles move across screen edges)
+
+**How to run:**
+```bash
+cd particle_life
+cargo run --release
+```
+
+**Controls:**
+- Escape: Exit the simulation
+
+**Dependencies:**
+- wgpu (GPU rendering)
+- winit (window management)
+- rayon (parallel processing)
+- cgmath (vector mathematics)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
