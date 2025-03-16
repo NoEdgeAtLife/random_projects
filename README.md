@@ -87,6 +87,32 @@ cargo run --release
 - rayon (parallel processing)
 - cgmath (vector mathematics)
 
+### Word Guesser
+
+A text-based word guessing game similar to hangman, where you try to guess a programming-related word with a limited number of attempts.
+
+**Features:**
+- Collection of programming-related words
+- Colored terminal feedback for correct and incorrect guesses
+- Option to guess a single letter or the entire word
+- Tracking of previously guessed letters
+- Limited attempts (6) to guess the word
+
+**How to run:**
+```bash
+cd word_guesser
+cargo run
+```
+
+**How to play:**
+- Enter a single letter to guess if it's in the word
+- Enter a complete word to attempt to guess the full solution
+- Try to solve the word before you run out of attempts!
+
+**Dependencies:**
+- rand (random word selection)
+- colored (terminal text coloring)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
