@@ -1,0 +1,15 @@
+[package]
+name = "trading_algorithms"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4.33", features = ["serde"] }
+csv = "1.3.0"
+serde = { version = "1.0.196", features = ["derive"] }
+serde_json = "1.0.113"
+tokio = { version = "1.36.0", features = ["full"] }
+plotters = "0.3.5"
+statrs = "0.16.0"
+ta = "0.5.0"
+reqwest = { version = "0.11.24", features = ["json"] }

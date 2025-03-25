@@ -1,8 +1,42 @@
-# Random Projects
-
+# Random Vibe Codes
 A collection of random coding projects and experiments.
-
 ## Projects
+
+### Trading Algorithms
+A comprehensive algorithmic trading platform built in Rust that implements various trading strategies and execution algorithms for backtesting and analysis.
+
+**Features:**
+- Multiple trading strategies:
+  - Moving Average Crossover
+  - Relative Strength Index (RSI)
+  - Mean Reversion with Bollinger Bands
+- Advanced execution algorithms:
+  - VWAP (Volume-Weighted Average Price)
+  - TWAP (Time-Weighted Average Price)
+  - Implementation Shortfall (IS)
+  - Adaptive Market Execution
+- Backtesting framework with performance metrics:
+  - Sharpe ratio
+  - Win rate
+  - Maximum drawdown
+  - Profit and loss tracking
+- Technical indicators library
+- Risk management utilities
+
+**How to run:**
+```bash
+cd trading_algorithms
+cargo run
+```
+
+**Dependencies:**
+- tokio (async runtime)
+- chrono (date and time handling)
+- serde (serialization/deserialization)
+- plotters (visualization)
+- statrs (statistical functions)
+- ta (technical analysis)
+- reqwest (API connectivity)
 
 ### Hypnotic Spiral
 
