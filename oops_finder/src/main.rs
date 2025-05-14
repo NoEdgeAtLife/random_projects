@@ -1,4 +1,4 @@
-use clap::{Arg, Command};
+use clap::{Arg, ArgMatches, Command};
 use std::fs;
 use std::path::Path;
 
@@ -13,7 +13,6 @@ fn main() {
                 .long("pattern")
                 .value_name("PATTERN")
                 .help("Pattern to search for")
-                .takes_value(true)
                 .required(true),
         )
         .arg(
@@ -22,13 +21,12 @@ fn main() {
                 .long("directory")
                 .value_name("DIRECTORY")
                 .help("Directory to search in")
-                .takes_value(true)
                 .default_value("."),
         )
         .get_matches();
 
-    let pattern = matches.value_of("pattern").unwrap();
-    let directory = matches.value_of("directory").unwrap();
+    let pattern = matches.get_one::<String>("pattern").unwrap();
+    let directory = matches.get_one::<String>("directory").unwrap();
 
     println!("Searching for '{}' in '{}'", pattern, directory);
 
